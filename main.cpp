@@ -46,7 +46,7 @@ int main()
     vector<double> sure_top2(10,0);
     vector<double> maybe_top2(10,0);
 
-    int done      = 40;
+    int done      = 43;
     int total     = 70;
     int remaining = total-done;
 
@@ -205,19 +205,19 @@ int main()
         points.clear();
         points.push_back(4);    //CSK
         points.push_back(10);   //SRH
-        points.push_back(6);    //DC
+        points.push_back(8);    //DC
         points.push_back(6);    //KKR
         points.push_back(8);    //PBKS
         points.push_back(0);    //MI
         points.push_back(10);   //RCB
         points.push_back(12);   //RR
-        points.push_back(14);   //GT
-        points.push_back(10);   //LSG
+        points.push_back(16);   //GT
+        points.push_back(12);   //LSG
 
         if(t%step==0)
             printf("Step : %d\n", t/step);
 
-        s = std::bitset<30>(t).to_string();
+        s = std::bitset<27>(t).to_string();
 
         for(int i=0;i<remaining;i++)
         {
